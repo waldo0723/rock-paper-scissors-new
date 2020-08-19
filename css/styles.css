@@ -682,7 +682,8 @@ body {
     left: 70px;
   }
   .container-fluid {
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .header {
@@ -734,24 +735,24 @@ body {
   }
 
   .dothouse1 {
-    width: 10px;
-    height: 10px;
+    width: 150px;
+    height: 150px;
     top: 30px;
     left: -120px;
     overflow-x: hidden;
   }
 
   .dothouse2 {
-    width: 25px;
-    height: 25px;
+    width: 250px;
+    height: 250px;
     left: 150px;
     top: 0;
     overflow-x: hidden;
   }
 
   .dothouse3 {
-    width: 30px;
-    height: 30px;
+    width: 300px;
+    height: 300px;
     top: -30px;
     left: 130px;
     overflow-x: hidden;
