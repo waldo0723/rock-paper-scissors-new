@@ -675,12 +675,18 @@ body {
 }
 
 @media only screen and (max-width:575px) {
+  body{
+    width: 100%;
+  }
+  .img-fluid{
+    left: 70px;
+  }
   .container-fluid {
     padding-left: 20px;
   }
 
   .header {
-    width: 450px;
+    width: 100%;
     padding-right: 0;
   }
 
@@ -689,20 +695,21 @@ body {
   }
 
   .rockhouse {
-    left: -50px;
+    left: -100px;
   }
 
   .paperhouse {
-    left: -50px;
+    left: -100px;
   }
 
   .scissorshouse {
-    left: -50px;
+    left: -100px;
   }
 
   .dot {
     width: 150px;
     height: 150px;
+    left: 200px;
   }
 
   .dotyou1 {
@@ -747,9 +754,7 @@ body {
     left: 175px;
   }
 
-  .dot {
-    left: 250px;
-  }
+
 
   .headyou {
     left: -90px;
@@ -758,4 +763,22 @@ body {
   .headhouse {
     left: -80px;
   }
+
+  .game{
+    width: 100%;
+
+  }
+  .butt{
+    width: 100%;
+  }
+.rockbut{
+  left: 200px;
+}
+.paperbut{
+  left:0;
+}
+.sicbut{
+left:100px;
+}
+
 }
