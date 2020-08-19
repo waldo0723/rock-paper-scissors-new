@@ -696,15 +696,15 @@ body {
   }
 
   .rockhouse {
-    left: 180px;
+    left: 200px;
   }
 
   .paperhouse {
-    left: 180px;
+    left: 200px;
   }
 
   .scissorshouse {
-    left: 180px;
+    left: 200px;
   }
 
   .dot {
@@ -738,14 +738,14 @@ body {
     width: 170px;
     height: 170px;
     top: 40px;
-    left: 170px;
+    left: 190px;
     overflow-x: hidden;
   }
 
   .dothouse2 {
     width: 190px;
     height: 190px;
-    left: 160px;
+    left: 180px;
     top: 30px;
     overflow-x: hidden;
   }
@@ -754,14 +754,16 @@ body {
     width: 210px;
     height: 210px;
     top: 20px;
-    left: 150px;
+    left: 170px;
     overflow-x: hidden;
   }
 
 
 
   .headyou {
-    left: -90px;
+    left: -20px;
+    font-size: 1rem;
+
   }
 
   .headhouse {
@@ -786,7 +788,7 @@ left:100px;
 }
 .headhouse{
   font-size: 1rem;
-    left: -100px;
+    left: 180px;
     width: 150px;
 }
 .housepick{
