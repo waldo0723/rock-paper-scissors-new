@@ -1,0 +1,761 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  color: black;
+}
+
+.container-fluid {
+  padding: 3% 25%;
+}
+
+.colored-section {
+  background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  height: 900px;
+  padding-top: 100px;
+}
+
+.header-div {
+  border: 1px solid;
+}
+
+.header {
+  padding-left: 200px;
+  width: 800px;
+}
+
+.game {
+  text-align: center;
+  margin-top: 50px;
+  width: 28em;
+  position: relative;
+}
+
+.card-body {
+  background-color: inherit;
+}
+
+.rock {
+  top: 10%;
+  left: 15%;
+  background-image: linear-gradient(to top, #dc2e4e, #dd405d);
+  box-shadow: 0 0.7rem 0 #b6203c;
+  display: inline-block;
+  padding: 2rem;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  margin: 480px 0 0 580px;
+}
+
+.rock-image {
+  height: 70px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.triangle-image {
+  height: 350px;
+  width: 350px;
+  margin-top: 50px;
+}
+
+.rock-circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 100px solid;
+  border-radius: 100%;
+  background-color: none;
+}
+
+.paper {
+  top: 10%;
+  left: 15%;
+  background-image: linear-gradient(to top, #4865f4, #5671f5);
+  box-shadow: 0 0.7rem 0 #2f4de4;
+  display: inline-block;
+  padding: 2rem;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  margin: 200px 0 0 400px;
+}
+
+.sccisors {
+  top: 10%;
+  left: 15%;
+  background-image: linear-gradient(to top, #ec9e0e, #eca922);
+  box-shadow: 0 0.7rem 0 #d68b00;
+  display: inline-block;
+  padding: 2rem;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  margin: 200px 0 0 720px;
+}
+
+.gameBox {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 -0.7rem 0 #d3d1d1;
+  position: relative;
+  top: 3%;
+}
+
+.btn {
+  width: 200px;
+  height: 200px;
+  z-index: 9;
+}
+
+.d {
+  background-color: #fff;
+  box-shadow: 0 -0.7rem 0 #d3d1d1;
+  border-radius: 50%;
+  height: 150px;
+  margin: 10px;
+  padding-top: 50px;
+}
+
+.butt {
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+}
+
+.img-fluid {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  width: 400px;
+}
+
+.paperbut {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  left: 250px;
+  border: none;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #4865f4, #5671f5);
+}
+
+.sicbut {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 570px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #ec9e0e, #eca922);
+}
+
+.rockbut {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 400px;
+  top: 250px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #dc2e4e, #dd405d);
+}
+
+.paperchoice {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  border: none;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #4865f4, #5671f5);
+}
+
+.userpick {
+  width: 40%;
+  left: 100px;
+  position: absolute;
+}
+
+.housepick {
+  width: 60%;
+  position: absolute;
+  left: 300px;
+}
+
+.pick {
+  display: none;
+}
+
+.rockhouse {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 300px;
+  top: 50px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #dc2e4e, #dd405d);
+  display: none;
+}
+
+.paperhouse {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 300px;
+  top: 50px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #4865f4, #5671f5);
+  display: none;
+}
+
+.scissorshouse {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 300px;
+  top: 50px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #ec9e0e, #eca922);
+  display: none;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 600px;
+  top: 50px;
+  opacity: 0.1;
+}
+
+.container-fluid {
+  padding-top: 50px;
+}
+
+.play {
+  left: 320px;
+  top: 200px;
+  position: absolute;
+  z-index: 9;
+}
+
+.dotyou1 {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 80px;
+  opacity: 0.1;
+  display: none;
+  z-index: 9;
+}
+
+.dotyou2 {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+  top: -50px;
+  opacity: 0.1;
+  z-index: 9;
+  display: none;
+}
+
+.dotyou3 {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: -100px;
+  opacity: 0.1;
+  display: none;
+}
+
+.dothouse1 {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  opacity: 0.1;
+  display: none;
+  z-index: 9;
+}
+
+.dothouse2 {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 500px;
+  top: -50px;
+  opacity: 0.1;
+  z-index: 9;
+  display: none;
+}
+
+.dothouse3 {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 450px;
+  top: -100px;
+  opacity: 0.1;
+  display: none;
+}
+
+.headyou {
+  display: none;
+  color: white;
+  position: absolute;
+  left: 50px;
+  width: 150px;
+}
+
+.headhouse {
+  display: none;
+  color: white;
+  left: 300px;
+  position: absolute;
+  width: 250px;
+}
+
+@media only screen and (max-width: 1525px) {
+  .header {
+    width: 700px;
+    padding-left: 100px;
+  }
+
+  .img-fluid {
+    position: absolute;
+    top: 50px;
+    left: 220px;
+  }
+
+  .paperbut {
+    left: 150px;
+  }
+
+  .rockbut {
+    top: 0;
+    left: 440px;
+  }
+
+  .sicbut {
+    left: 320px;
+    top: 250px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .img-fluid {
+    position: absolute;
+    top: 50px;
+    left: 220px;
+  }
+
+  .paperbut {
+    left: 150px;
+  }
+
+  .rockbut {
+    left: 420px;
+  }
+
+  .sicbut {
+    left: 300px;
+    top: 250px;
+  }
+
+  .header {
+    width: 700px;
+  }
+
+  .dotyou1 {
+    left: -30px;
+  }
+
+  .dotyou2 {
+    left: -80px;
+  }
+
+  .dotyou3 {
+    left: -120px;
+  }
+
+  .dothouse1 {
+    left: 150px;
+  }
+
+  .dothouse2 {
+    left: 400px;
+  }
+
+  .dothouse3 {
+    left: 350px;
+  }
+
+  .paperchoice {
+    left: -80px;
+  }
+
+  .scissorshouse {
+    left: 200px;
+  }
+
+  .rockhouse {
+    left: 200px
+  }
+
+  .paperhouse {
+    left: 200px;
+  }
+
+  .butt {
+    padding-left: -100px;
+  }
+
+  .dot {
+    left: 500px;
+  }
+
+  .headyou {
+    left: -80px;
+  }
+
+  .headhouse {
+    left: 180px;
+  }
+
+  .play {
+    left: 200px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container-fluid {
+    padding-left: 200px;
+  }
+
+  .img-fluid {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+  }
+
+  .paperbut {
+    left: 50px;
+  }
+
+  .rockbut {
+    left: 280px;
+  }
+
+  .sicbut {
+    left: 160px;
+    top: 250px;
+  }
+
+  .header {
+    padding-left: 0;
+    width: 500px;
+  }
+
+  .paperchoice {
+    left: -120px;
+  }
+
+  .headyou {
+    left: -150px;
+  }
+
+  .dot {
+    left: 320px;
+  }
+
+  .dotyou1 {
+    left: -70px;
+  }
+
+  .dotyou2 {
+    left: -120px;
+  }
+
+  .dotyou3 {
+    left: -160px;
+  }
+
+  .headhouse {
+    left: 50px;
+  }
+
+  .dothouse1 {
+    left: -40px;
+  }
+
+  .dothouse2 {
+    left: 210px;
+  }
+
+  .dothouse3 {
+    left: 160px;
+  }
+
+  .scissorshouse {
+    left: 20px;
+  }
+
+  .rockhouse {
+    left: 20px
+  }
+
+  .paperhouse {
+    left: 20px;
+  }
+
+  .butt {
+    padding-left: -200px;
+  }
+
+  .play {
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .container-fluid {
+    padding-left: 100px;
+  }
+
+  .header {
+    width: 450px;
+  }
+
+  .paperbut {
+    left: 0;
+  }
+
+  .img-fluid {
+    left: 100px;
+    width: 200px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .d {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .paperbut {
+    left: 50px;
+  }
+
+  .sicbut {
+    left: 120px;
+    top: 180px;
+  }
+
+  .rockbut {
+    left: 220px;
+  }
+
+  .rockhouse {
+    height: 150px;
+    width: 150px;
+  }
+
+  .dot {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dotyou1 {
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: -45px;
+  }
+
+  .dotyou2 {
+    width: 250px;
+    height: 250px;
+    left: -70px;
+    top: 0;
+  }
+
+  .dotyou3 {
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: -95px;
+  }
+
+  .dothouse1 {
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    left: -5px;
+  }
+
+  .dothouse2 {
+    width: 250px;
+    height: 250px;
+    left: 270px;
+    top: 0;
+  }
+
+  .dothouse3 {
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: 245px;
+  }
+}
+
+@media only screen and (max-width:575px) {
+  .container-fluid {
+    padding-left: 20px;
+  }
+
+  .header {
+    width: 450px;
+    padding-right: 0;
+  }
+
+  .paperchoice {
+    left: -80px;
+  }
+
+  .rockhouse {
+    left: -50px;
+  }
+
+  .paperhouse {
+    left: -50px;
+  }
+
+  .scissorshouse {
+    left: -50px;
+  }
+
+  .dot {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dotyou1 {
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: -5px;
+  }
+
+  .dotyou2 {
+    width: 250px;
+    height: 250px;
+    left: -30px;
+    top: 0;
+  }
+
+  .dotyou3 {
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: -55px;
+  }
+
+  .dothouse1 {
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    left: -75px;
+  }
+
+  .dothouse2 {
+    width: 250px;
+    height: 250px;
+    left: 200px;
+    top: 0;
+  }
+
+  .dothouse3 {
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: 175px;
+  }
+
+  .dot {
+    left: 250px;
+  }
+
+  .headyou {
+    left: -90px;
+  }
+
+  .headhouse {
+    left: -80px;
+  }
+}
