@@ -25,6 +25,9 @@ body {
 
 .header-div {
   border: 1px solid;
+  border-radius: 10px;
+  border-color: #F5F5F5;
+  padding: 10px;
 }
 
 .header {
