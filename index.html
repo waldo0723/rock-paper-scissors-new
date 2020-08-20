@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,10 +26,15 @@
 
   <section class="container-fluid colored-section" id="title">
 
+            <button type="button" name="button" class="play"> Play again</button>
     <div class="header">
 
       <div class="header-div">
         <img src="images/logo.svg" alt="" class="logo">
+        <div class="sco">
+          <p>score</p>
+          <p class="score">0</p>
+        </div>
       </div>
     </div>
 
@@ -68,7 +74,18 @@
                 <img src="images/icon-paper.svg" alt="triangle " class="">
               </div>
             </button>
-            <button type="button" name="button" class="play"> Play again</button>
+            <button type="button" name="button" class="btn rockchoice">
+              <div class="d">
+                <img src="images/icon-rock.svg" alt="triangle " class="">
+              </div>
+            </button>
+            <button type="button" name="button" class="btn scissorschoice">
+              <div class="d">
+                <img src="images/icon-scissors.svg" alt="triangle " class="">
+              </div>
+            </button>
+            <h1 class="win">YOU WIN</h1>
+
 
           </div>
 

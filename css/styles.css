@@ -1,3 +1,4 @@
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -9,6 +10,7 @@
 
 body {
   color: black;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .container-fluid {
@@ -144,6 +146,7 @@ body {
 
 .logo {
   position: relative;
+  display: inline-block;
 }
 
 .img-fluid {
@@ -197,6 +200,31 @@ body {
   border: none;
   border-spacing: 10px;
   background-image: linear-gradient(to top, #4865f4, #5671f5);
+  display: none;
+}
+.rockchoice {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  border: none;
+  border-spacing: 10px;
+  background-image:  linear-gradient(to top, #dc2e4e, #dd405d);
+  display: none;
+}
+.scissorschoice {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  border: none;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #ec9e0e, #eca922);
+  display: none;
 }
 
 .userpick {
@@ -271,10 +299,14 @@ body {
 }
 
 .play {
-  left: 320px;
-  top: 200px;
+  left: 750px;
+  top: 400px;
   position: absolute;
-  z-index: 9;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+z-index: 100;
+  display: none;
 }
 
 .dotyou1 {
@@ -373,6 +405,29 @@ body {
   width: 250px;
 }
 
+.win{
+  color: white;
+  left: 270px;
+  position: relative;
+  top: 150px;
+  width: 200px;
+  display: none;
+}
+.sco{
+  display: inline-block;
+  float: right;
+  background:#F5F5F5;
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.score{
+  font-size: 4rem;
+  margin-top: -40px;
+}
+
 @media only screen and (max-width: 1525px) {
   .header {
     width: 700px;
@@ -389,12 +444,12 @@ body {
     left: 150px;
   }
 
-  .rockbut {
+  .sicbut {
     top: 0;
     left: 440px;
   }
 
-  .sicbut {
+  .rockbut {
     left: 320px;
     top: 250px;
   }
@@ -415,11 +470,11 @@ body {
     left: 150px;
   }
 
-  .rockbut {
+  .sicbut {
     left: 420px;
   }
 
-  .sicbut {
+  .rockbut {
     left: 300px;
     top: 250px;
   }
@@ -485,7 +540,10 @@ body {
   }
 
   .play {
-    left: 200px;
+    left:620px;
+  }
+  .win{
+    left: 170px;
   }
 }
 
@@ -504,11 +562,11 @@ body {
     left: 50px;
   }
 
-  .rockbut {
+  .sicbut {
     left: 280px;
   }
 
-  .sicbut {
+  .rockbut {
     left: 160px;
     top: 250px;
   }
@@ -523,11 +581,11 @@ body {
   }
 
   .headyou {
-    left: -150px;
+    left: -100px;
   }
 
   .dot {
-    left: 320px;
+    left: 360px;
   }
 
   .dotyou1 {
@@ -547,27 +605,27 @@ body {
   }
 
   .dothouse1 {
-    left: -40px;
+    left: 0px;
   }
 
   .dothouse2 {
-    left: 210px;
+    left: 240px;
   }
 
   .dothouse3 {
-    left: 160px;
+    left: 200px;
   }
 
   .scissorshouse {
-    left: 20px;
+    left: 60px;
   }
 
   .rockhouse {
-    left: 20px
+    left: 60px
   }
 
   .paperhouse {
-    left: 20px;
+    left: 60px;
   }
 
   .butt {
@@ -575,7 +633,12 @@ body {
   }
 
   .play {
-    left: 100px;
+    left: 380px;
+
+
+  }
+  .win{
+    left: 70px;
   }
 }
 
@@ -612,12 +675,12 @@ body {
     left: 50px;
   }
 
-  .sicbut {
+  .rockbut {
     left: 120px;
     top: 180px;
   }
 
-  .rockbut {
+  .sicbut {
     left: 220px;
   }
 
@@ -656,13 +719,13 @@ body {
     width: 200px;
     height: 200px;
     top: 30px;
-    left: -5px;
+    left: 30px;
   }
 
   .dothouse2 {
     width: 250px;
     height: 250px;
-    left: 270px;
+    left: 305px;
     top: 0;
   }
 
@@ -670,7 +733,16 @@ body {
     width: 300px;
     height: 300px;
     top: -30px;
-    left: 245px;
+    left: 280px;
+  }
+  .play {
+    left: 260px;
+top: 350px;
+
+  }
+  .win{
+    left: 50px;
+    top: 90px;
   }
 }
 
@@ -777,13 +849,13 @@ body {
   .butt{
     width: 100%;
   }
-.rockbut{
+.sicbut{
   left: 200px;
 }
 .paperbut{
   left:0;
 }
-.sicbut{
+.rockbut{
 left:100px;
 }
 .headhouse{
@@ -796,6 +868,23 @@ left:100px;
 }
 .userpick  {
   left: 0;
+}
+.play {
+  left: 80px;
+top: 550px;
+width: 250px;
+font-size: 2rem;
+
+
+height: 50px;
+
+}
+.win{
+font-size: 3.5rem;
+  top: 250px;
+  width: 300px;
+  left: 25px;
+  font-weight: bold;
 }
 
 }
