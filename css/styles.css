@@ -299,8 +299,8 @@ body {
 }
 
 .play {
-  left: 750px;
-  top: 400px;
+  left: 280px;
+  top: 200px;
   position: absolute;
   width: 180px;
   height: 40px;
@@ -400,7 +400,7 @@ z-index: 100;
 .headhouse {
   display: none;
   color: white;
-  left: 300px;
+  left: 280px;
   position: absolute;
   width: 250px;
 }
@@ -430,7 +430,7 @@ z-index: 100;
 
 @media only screen and (max-width: 1525px) {
   .header {
-    width: 700px;
+    width: 750px;
     padding-left: 100px;
   }
 
@@ -510,6 +510,12 @@ z-index: 100;
   .paperchoice {
     left: -80px;
   }
+  .rockchoice {
+    left: -80px;
+  }
+  .scissorschoice {
+    left: -80px;
+  }
 
   .scissorshouse {
     left: 200px;
@@ -540,7 +546,7 @@ z-index: 100;
   }
 
   .play {
-    left:620px;
+    left:180px;
   }
   .win{
     left: 170px;
@@ -563,7 +569,7 @@ z-index: 100;
   }
 
   .sicbut {
-    left: 280px;
+    left: 300px;
   }
 
   .rockbut {
@@ -577,6 +583,12 @@ z-index: 100;
   }
 
   .paperchoice {
+    left: -120px;
+  }
+  .scissorschoice {
+    left: -120px;
+  }
+  .rockchoice {
     left: -120px;
   }
 
@@ -633,7 +645,7 @@ z-index: 100;
   }
 
   .play {
-    left: 380px;
+    left: 80px;
 
 
   }
@@ -736,13 +748,19 @@ z-index: 100;
     left: 280px;
   }
   .play {
-    left: 260px;
-top: 350px;
+    left: 60px;
+top: 150px;
 
   }
   .win{
     left: 50px;
     top: 90px;
+  }
+  .headyou{
+    left: -120px;
+  }
+  .headhouse{
+    left: 30px;
   }
 }
 
@@ -766,6 +784,14 @@ top: 350px;
   .paperchoice {
     left: -20px;
   }
+  .rockchoice {
+    left: -20px;
+  }
+
+  .scissorschoice {
+    left: -20px;
+  }
+
 
   .rockhouse {
     left: 200px;
@@ -860,7 +886,7 @@ left:100px;
 }
 .headhouse{
   font-size: 1rem;
-    left: 180px;
+    left: 200px;
     width: 150px;
 }
 .housepick{
@@ -870,12 +896,12 @@ left:100px;
   left: 0;
 }
 .play {
-  left: 80px;
-top: 550px;
+  left: 50px;
+top: 350px;
 width: 250px;
 font-size: 2rem;
 
-
+  background-color:#F5F5F5;;
 height: 50px;
 
 }
