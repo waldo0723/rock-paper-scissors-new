@@ -38,7 +38,7 @@ body {
 .game {
   text-align: center;
   margin-top: 50px;
-  width: 28em;
+width: 100%;
   position: relative;
 }
 
@@ -157,6 +157,14 @@ body {
   top: 50px;
   left: 300px;
   width: 400px;
+  display: none;
+}
+
+.imagepen{
+  position: absolute;
+
+  top: 150px;
+  left: 320px;
 }
 
 .paperbut {
@@ -164,7 +172,8 @@ body {
   border-radius: 50%;
   border-width: 10px;
   position: absolute;
-  left: 250px;
+  left: 600px;
+  top:150px;
   border: none;
   border-spacing: 10px;
   background-image: linear-gradient(to top, #4865f4, #5671f5);
@@ -176,7 +185,7 @@ body {
   border-width: 10px;
   position: absolute;
   border: none;
-  left: 570px;
+  left: 400px;
   border-spacing: 10px;
   background-image: linear-gradient(to top, #ec9e0e, #eca922);
 }
@@ -187,10 +196,33 @@ body {
   border-width: 10px;
   position: absolute;
   border: none;
-  left: 400px;
-  top: 250px;
+  left: 550px;
+  top: 400px;
   border-spacing: 10px;
   background-image: linear-gradient(to top, #dc2e4e, #dd405d);
+}
+.lizardbut {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 250px;
+  top: 400px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #834FE3, #8C5DE5);
+}
+
+.spockbut {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 150px;
+  top: 150px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #72B0BB, #52BED1);
 }
 
 .paperchoice {
@@ -230,6 +262,30 @@ body {
   display: none;
 }
 
+.spockchoice {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  border: none;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #72B0BB, #52BED1);
+  display: none;
+}
+.lizardchoice {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  border: none;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #834FE3, #8C5DE5);
+  display: none;
+}
 .userpick {
   width: 40%;
   left: 100px;
@@ -285,6 +341,30 @@ body {
   display: none;
 }
 
+.lizardhouse {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 300px;
+  top: 50px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #834FE3, #8C5DE5);
+  display: none;
+}
+.spockhouse {
+  margin: 0;
+  border-radius: 50%;
+  border-width: 10px;
+  position: absolute;
+  border: none;
+  left: 300px;
+  top: 50px;
+  border-spacing: 10px;
+  background-image: linear-gradient(to top, #72B0BB, #52BED1);
+  display: none;
+}
 .dot {
   height: 200px;
   width: 200px;
@@ -432,10 +512,10 @@ z-index: 100;
 }
 
 @media only screen and (max-width: 1525px) {
-  .header {
+  /* .header {
     width: 750px;
     padding-left: 100px;
-  }
+  } */
 
   .img-fluid {
     position: absolute;
@@ -443,7 +523,7 @@ z-index: 100;
     left: 220px;
   }
 
-  .paperbut {
+  /* .paperbut {
     left: 150px;
   }
 
@@ -455,11 +535,11 @@ z-index: 100;
   .rockbut {
     left: 320px;
     top: 250px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1366px) {
-  body {
+  /* body {
     overflow-x: hidden;
   }
 
@@ -467,9 +547,9 @@ z-index: 100;
     position: absolute;
     top: 50px;
     left: 220px;
-  }
+  } */
 
-  .paperbut {
+  /* .paperbut {
     left: 150px;
   }
 
@@ -480,13 +560,13 @@ z-index: 100;
   .rockbut {
     left: 300px;
     top: 250px;
-  }
+  } */
 
-  .header {
+  /* .header {
     width: 700px;
-  }
+  } */
 
-  .dotyou1 {
+  /* .dotyou1 {
     left: -30px;
   }
 
@@ -496,9 +576,9 @@ z-index: 100;
 
   .dotyou3 {
     left: -120px;
-  }
+  } */
 
-  .dothouse1 {
+  /* .dothouse1 {
     left: 150px;
   }
 
@@ -508,9 +588,9 @@ z-index: 100;
 
   .dothouse3 {
     left: 350px;
-  }
+  } */
 
-  .paperchoice {
+  /* .paperchoice {
     left: -80px;
   }
   .rockchoice {
@@ -518,9 +598,9 @@ z-index: 100;
   }
   .scissorschoice {
     left: -80px;
-  }
+  } */
 
-  .scissorshouse {
+  /* .scissorshouse {
     left: 200px;
   }
 
@@ -530,35 +610,45 @@ z-index: 100;
 
   .paperhouse {
     left: 200px;
-  }
+  } */
 
-  .butt {
+  /* .butt {
     padding-left: -100px;
-  }
+  } */
 
-  .dot {
+  /* .dot {
     left: 500px;
-  }
+  } */
 
-  .headyou {
+  /* .headyou {
     left: -80px;
-  }
+  } */
 
-  .headhouse {
+  /* .headhouse {
     left: 180px;
-  }
+  } */
 
-  .play {
+  /* .play {
     left:180px;
   }
   .win{
     left: 170px;
-  }
+  } */
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width:992px){
+
+  .header{
+    padding-left: 0;
+    width:auto;
+  }
+  .game{
+    left:-150px;
+  }
+}
+/* @media only screen and (max-width: 992px) {
   .container-fluid {
-    padding-left: 200px;
+
   }
 
   .img-fluid {
@@ -567,7 +657,8 @@ z-index: 100;
     left: 80px;
   }
 
-  .paperbut {
+
+  /* .paperbut {
     left: 50px;
   }
 
@@ -578,14 +669,14 @@ z-index: 100;
   .rockbut {
     left: 160px;
     top: 250px;
-  }
+  } */
 
-  .header {
+  /* .header {
     padding-left: 0;
     width: 500px;
-  }
+  } */
 
-  .paperchoice {
+  /* .paperchoice {
     left: -120px;
   }
   .scissorschoice {
@@ -641,24 +732,123 @@ z-index: 100;
 
   .paperhouse {
     left: 60px;
-  }
-
+  } */
+/*
   .butt {
     padding-left: -200px;
-  }
+  } */
 
-  .play {
+  /* .play {
     left: 80px;
 
 
   }
   .win{
     left: 70px;
-  }
-}
+  } */
+/* }  */
 
 @media only screen and (max-width:768px) {
-  .container-fluid {
+  .game{
+    left: -200px;
+  }
+  .dot {
+    width: 150px;
+    height: 150px;
+  }
+  .btn {
+    width: 150px;
+    height: 150px;
+  }
+  .d {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+  }
+  .imagepen{
+    top:100px;
+    left: 300px;
+  }
+  .spockbut{
+    left:250px
+  }
+  .paperbut{
+    left: 550px;
+  }
+  .lizardbut{
+  left:270px;
+  top: 350px;
+
+  }
+  .rockbut{
+    left: 500px;
+    top: 350px;
+  }
+  .dothouse1 {
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    left: 280px;
+    overflow-x: hidden;
+  }
+
+  .dothouse2 {
+    width: 260px;
+    height: 260px;
+    left: 550px;
+    top: 0px;
+    overflow-x: hidden;
+  }
+
+  .dothouse3 {
+    width: 320px;
+    height: 320px;
+    top: -20px;
+    left: 520px;
+    overflow-x: hidden;
+  }
+  .dotyou1 {
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    left: 125px;
+    overflow-x: hidden;
+  }
+
+  .dotyou2 {
+    width: 260px;
+    height: 260px;
+    left: 100px;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  .dotyou3 {
+    width: 320px;
+    height: 320px;
+    top: -20px;
+    left: 70px;
+    overflow-x: hidden;
+  }
+  .paperchoice {
+    left: 50px;
+  }
+  .rockchoice {
+    left: 50px;
+  }
+
+  .scissorschoice {
+    left: 50px;
+  }
+
+  .spockchoice {
+  left: 50px;
+  }
+  .lizardchoice {
+  left: 50px;
+  }
+
+  /* .container-fluid {
     padding-left: 100px;
   }
 
@@ -675,18 +865,11 @@ z-index: 100;
     width: 200px;
   }
 
-  .btn {
-    width: 150px;
-    height: 150px;
-  }
 
-  .d {
-    width: 100px;
-    height: 100px;
-    padding-top: 20px;
-  }
 
-  .paperbut {
+*/
+
+  /* .paperbut {
     left: 50px;
   }
 
@@ -697,8 +880,8 @@ z-index: 100;
 
   .sicbut {
     left: 220px;
-  }
-
+  } */
+/*
   .rockhouse {
     height: 150px;
     width: 150px;
@@ -764,41 +947,187 @@ top: 150px;
   }
   .headhouse{
     left: 30px;
-  }
+  } */
 }
 
 @media only screen and (max-width:575px) {
-  body{
+  .game{
+    left
+  }
+  .imagepen{
+    left:250px;
+    width: 250px;
+
+  }
+  .headyou{
+    left:120px;
+  }
+  .headhouse{
+    left: 50px;
+  }
+  .btn {
+    width: 110px;
+    height: 110px;
+  }
+  .d {
+    width: 70px;
+    height: 70px;
+    padding-top: 0;
+  }
+
+  .btn2{
+    width: 150px;
+    height: 150px;
+  }
+
+  .d2 {
+    width: 120px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 -0.7rem 0 #d3d1d1;
+    border-radius: 50%;
+    margin: 10px;
+    padding-top: 20px;
+  }
+
+  .spockbut{
+    left:200px
+  }
+  .paperbut{
+    left: 430px;
+  }
+  .lizardbut{
+  left:250px;
+  top: 300px;
+
+  }
+  .rockbut{
+    left: 400px;
+    top: 300px;
+  }
+  .sicbut{
+    left:320px;
+    top: 30px;
+
+  }
+  .paperchoice {
+    left: 120px;
+  }
+  .rockchoice {
+    left: 120px;
+  }
+
+  .scissorschoice {
+    left: 120px;
+  }
+
+  .spockchoice {
+    left: 120px;
+  }
+  .lizardchoice {
+    left: 120px;
+  }
+
+
+
+  .dotyou1 {
+    width: 170px;
+    height: 170px;
+    top: 40px;
+    left: 210px;
+  }
+
+  .dotyou2 {
+    width: 190px;
+    height: 190px;
+    left: 200px;
+    top: 30px;
+  }
+
+  .dotyou3 {
+    width: 210px;
+    height: 210px;
+    top: 20px;
+    left: 190px;
+  }
+  .dot {
+    width: 150px;
+    height: 150px;
+    left: 200px;
+  }
+  .rockhouse{
+    left: 100px;
+  }
+  .paperhouse {
+    left: 100px;
+  }
+
+  .scissorshouse {
+    left: 100px;
+  }
+  .lizardhouse{
+  left: 100px;
+  }
+  .spockhouse{
+      left: 100px;
+  }
+  .dothouse1 {
+    width: 170px;
+    height: 170px;
+    top: 40px;
+    left: 90px;
+    overflow-x: hidden;
+  }
+
+  .dothouse2 {
+    width: 190px;
+    height: 190px;
+    left: 430px;
+    top: 30px;
+    overflow-x: hidden;
+  }
+
+  .dothouse3 {
+    width: 210px;
+    height: 210px;
+    top: 20px;
+    left: 420px;
+    overflow-x: hidden;
+  }
+  .play {
+    left: 180px;
+  top: 350px;
+  width: 250px;
+  font-size: 2rem;
+
+    background-color:#F5F5F5;;
+  height: 50px;
+
+  }
+  .win{
+  font-size: 3.5rem;
+    top: 250px;
+    width: 300px;
+    left: 150px;
+    font-weight: bold;
+  }
+.housepick{
+  left: 350px;
+}
+  /* body{
     width: 100%;
   }
   .img-fluid{
     left: 70px;
   }
-  .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+
 
   .header {
     width: 100%;
     padding-right: 0;
   }
 
-  .paperchoice {
-    left: -20px;
-  }
-  .rockchoice {
-    left: -20px;
-  }
 
-  .scissorschoice {
-    left: -20px;
-  }
-
-
-  .rockhouse {
-    left: 200px;
-  }
 
   .paperhouse {
     left: 200px;
@@ -872,13 +1201,13 @@ top: 150px;
   }
 
   .game{
-    width: 100%;
+left: -200px;
 
   }
   .butt{
     width: 100%;
-  }
-.sicbut{
+  } */
+/* .sicbut{
   left: 200px;
 }
 .paperbut{
@@ -886,8 +1215,8 @@ top: 150px;
 }
 .rockbut{
 left:100px;
-}
-.headhouse{
+} */
+/* .headhouse{
   font-size: 1rem;
     left: 200px;
     width: 150px;
@@ -914,6 +1243,6 @@ font-size: 3.5rem;
   width: 300px;
   left: 25px;
   font-weight: bold;
-}
+} */
 
 }

@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
@@ -24,165 +24,152 @@
 
 
 
-  <section class="container-fluid colored-section" id="title">
+  <section class=" colored-section" id="title">
 
 
-    <div class="header">
+    <div class="container">
+      <div class=" header">
 
-      <div class="header-div">
-        <img src="images/logo.svg" alt="" class="logo">
-        <div class="sco">
-          <p>score</p>
-          <p class="score">0</p>
-        </div>
-      </div>
-    </div>
-
-    <div class=" game ">
-
-      <img src="images/bg-triangle.svg" alt="triangle" class="img-fluid">
-
-      <div class="butt">
-        <button type="button" name="button" class="btn paperbut">
-          <div class="d">
-            <img src="images/icon-paper.svg" alt="triangle " class="">
-          </div>
-        </button>
-        <button type="button" name="button" class="btn sicbut">
-          <div class="d">
-            <img src="images/icon-scissors.svg" alt="triangle " class="">
-          </div>
-        </button>
-        <button type="button" name="button" class="btn rockbut">
-          <div class="d">
-            <img src="images/icon-rock.svg" alt="triangle " class="">
-          </div>
-        </button>
-      </div>
-
-                                    <span class="dotyou2"></span>
-                                                      <span class="dotyou3"></span>
-      <div class="pick">
-                        <span class="dotyou1"></span>
-        <div class="row">
-
-          <div class="userpick">
-            <h3 class="headyou">YOU PICKED</h3>
-
-            <button type="button" name="button" class="btn paperchoice">
-              <div class="d">
-                <img src="images/icon-paper.svg" alt="triangle " class="">
-              </div>
-            </button>
-            <button type="button" name="button" class="btn rockchoice">
-              <div class="d">
-                <img src="images/icon-rock.svg" alt="triangle " class="">
-              </div>
-            </button>
-            <button type="button" name="button" class="btn scissorschoice">
-              <div class="d">
-                <img src="images/icon-scissors.svg" alt="triangle " class="">
-              </div>
-            </button>
-            <h1 class="win">NADA</h1>
-              <button type="button" name="button" class="play"> Play again</button>
-
-
-          </div>
-
-          <span class="dot"></span>
-          <span class="dothouse2"></span>
-                            <span class="dothouse3"></span>
-          <div class="housepick">
-<span class="dothouse1"></span>
-            <h3 class="headhouse">THE HOUSE PICKED</h3>
-
-            <button type="button" name="button" class=" rockhouse btn">
-
-              <div class="d">
-                <img src="images/icon-rock.svg" alt="triangle " class="">
-              </div>
-            </button>
-            <button type="button" name="button" class=" paperhouse btn">
-
-              <div class="d">
-                <img src="images/icon-paper.svg" alt="triangle " class="">
-              </div>
-            </button>
-            <button type="button" name="button" class=" scissorshouse btn">
-
-              <div class="d">
-                <img src="images/icon-scissors.svg" alt="triangle " class="">
-              </div>
-            </button>
+        <div class="header-div">
+          <img src="images/logo.svg" alt="" class="logo">
+          <div class="sco">
+            <p>score</p>
+            <p class="score">0</p>
           </div>
         </div>
-
       </div>
-
-    </div>
-
-    <!-- <div class="row">
-        <div class="col-12  ">
-          <div class="card  price-border border-white">
-
-            <div class="card-body">
-
-              <img src="images/bg-triangle.svg" alt="" class="img-fluid">
+      <div class="row  ">
+        <div class=" game">
 
 
+          <img src="images/bg-triangle.svg" alt="triangle" class="img-fluid">
+          <img src="images/bg-pentagon.svg" alt="triangle" class="imagepen sc">
+
+          <div class="butt">
+            <button type="button" name="button" class="btn paperbut sc">
+              <div class="d">
+                <img src="images/icon-paper.svg" alt="paper " class="">
+              </div>
+            </button>
+            <button type="button" name="button" class="btn sicbut sc ">
+              <div class="d">
+                <img src="images/icon-scissors.svg" alt="scissors " class="">
+              </div>
+            </button>
+            <button type="button" name="button" class="btn rockbut sc ">
+              <div class="d">
+                <img src="images/icon-rock.svg" alt="rock " class="">
+              </div>
+            </button>
+            <button type="button" name="button" class="btn lizardbut sc ">
+              <div class="d">
+                <img src="images/icon-lizard.svg" alt="rock " class="">
+              </div>
+            </button>
+            <button type="button" name="button" class="btn spockbut sc ">
+              <div class="d">
+                <img src="images/icon-spock.svg" alt="rock " class="">
+              </div>
+            </button>
+          </div>
+
+          <span class="dotyou2"></span>
+          <span class="dotyou3"></span>
+          <div class="pick">
+            <span class="dotyou1"></span>
+            <div class="row">
+
+              <div class="userpick">
+                <h3 class="headyou">YOU PICKED</h3>
+
+                <button type="button" name="button" class="btn2 btn paperchoice">
+                  <div class="d2 d">
+                    <img src="images/icon-paper.svg" alt="paper " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 btn rockchoice">
+                  <div class="d2 d">
+                    <img src="images/icon-rock.svg" alt="rock " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 btn scissorschoice">
+                  <div class="d2 d">
+                    <img src="images/icon-scissors.svg" alt="scissors " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 btn spockchoice">
+                  <div class="d2 d">
+                    <img src="images/icon-spock.svg" alt="scissors " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 btn lizardchoice">
+                  <div class="d2 d">
+                    <img src="images/icon-lizard.svg" alt="scissors " class="">
+                  </div>
+                </button>
+                <h1 class="win">NADA</h1>
+                <button type="button" name="button" class="play"> Play again</button>
+
+
+              </div>
+
+              <span class="dot"></span>
+              <span class="dothouse2"></span>
+              <span class="dothouse3"></span>
+              <div class="housepick">
+                <span class="dothouse1"></span>
+                <h3 class="headhouse">THE HOUSE PICKED</h3>
+
+                <button type="button" name="button" class="btn2 rockhouse ">
+
+                  <div class="d2 d">
+                    <img src="images/icon-rock.svg" alt="rock " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 paperhouse ">
+
+                  <div class="d2 d">
+                    <img src="images/icon-paper.svg" alt="paper " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 scissorshouse ">
+
+                  <div class="d2 d">
+                    <img src="images/icon-scissors.svg" alt="scissors " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 spockhouse ">
+
+                  <div class="d2 d">
+                    <img src="images/icon-spock.svg" alt="scissors " class="">
+                  </div>
+                </button>
+                <button type="button" name="button" class="btn2 lizardhouse ">
+
+                  <div class="d2 d">
+                    <img src="images/icon-lizard.svg" alt="scissors " class="">
+                  </div>
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-      </div> -->
 
-
-    <!-- <div class="paper">
-          <div class="gameBox">
-            <img src="images/icon-paper.svg" alt="triangle " class="rock-image">
           </div>
 
-        </div> -->
-    <!-- <div class="sccisors">
-          <div class="gameBox">
-            <img src="images/icon-scissors.svg" alt="triangle " class="rock-image">
-          </div>
 
         </div>
-
-        <div class="rock">
-          <div class="gameBox">
-            <img src="images/icon-rock.svg" alt="triangle " class="rock-image">
-          </div>
-
-        </div> -->
-
-
-
-
-
-
-
-
-
+      </div>
+    </div>
 
   </section>
-
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Waldo Reyes</a>.
   </div>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js">
-</body>
+    < /body>
+  </script>
 
-
-</script>
 </html>
